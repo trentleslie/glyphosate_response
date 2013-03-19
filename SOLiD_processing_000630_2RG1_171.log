@@ -1,0 +1,603 @@
+30 Jun 2011 13:49:36,141  INFO [main] PluginJobManager:107 - >>>> START of PluginJobManager >>>> date=2011-06-30 13:49:36.124  EDT
+30 Jun 2011 13:49:36,148  INFO [main] PluginJobManager:110 - Bioscope version: bioscope-v1.3-rBS130_50843_20101020105719 
+30 Jun 2011 13:49:36,502  INFO [ActiveMQ Task] FailoverTransport:745 - Successfully connected to tcp://asp.genomics.purdue.edu:61616?wireFormat.MaxInactivityDuration=-1
+30 Jun 2011 13:49:36,590  INFO [ActiveMQ Task] FailoverTransport:745 - Successfully connected to tcp://asp.genomics.purdue.edu:61616?wireFormat.MaxInactivityDuration=-1
+30 Jun 2011 13:49:36,694  INFO [main] ClusterJob:142 - Template location - /scratch/genomics/bioscope/bioscope-coates/etc/template
+30 Jun 2011 13:49:37,084  WARN [main] PluginJobScheduler:88 - No plugins found in wt.pe.junction.finder.ini
+30 Jun 2011 13:49:37,119  INFO [main] AnalysisJobManager:63 - AnalysisJobManager.manageJobs() job.name=wt.f3.genomic.mapping.plugin.run; pluginId=wt.f3.genomic.mapping.plugin.run
+30 Jun 2011 13:49:37,119  INFO [main] AnalysisJobManager:63 - AnalysisJobManager.manageJobs() job.name=wt.f3.filter.mapping.plugin.run; pluginId=wt.f3.filter.mapping.plugin.run
+30 Jun 2011 13:49:37,126  INFO [main] ClusterPluginJobLauncher:187 - Spawned process for 'wt.f3.genomic.mapping.plugin.run'.
+java_app.sh --memory 64 com.apldbio.aga.analysis.exec.PluginRunner -q bbc70d10-c0c9-4167-bf88-c57dc1af243d -s -L /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log -l wt.f3.genomic.mapping.plugin/wt.f3.genomic.mapping.plugin.run-1.20110630174937123.log -j 1 wt.f3.genomic.mapping.plugin.run /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/wt.pe.f3.mapping.ini
+30 Jun 2011 13:49:37,126  INFO [main] ClusterPluginJobLauncher:187 - Spawned process for 'wt.f3.filter.mapping.plugin.run'.
+java_app.sh --memory 64 com.apldbio.aga.analysis.exec.PluginRunner -q bbc70d10-c0c9-4167-bf88-c57dc1af243d -s -L /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log -l wt.f3.filter.mapping.plugin/wt.f3.filter.mapping.plugin.run-2.20110630174937126.log -j 2 wt.f3.filter.mapping.plugin.run /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/wt.pe.f3.mapping.ini
+30 Jun 2011 13:49:37,126  INFO [main] AnalysisJobManager:46 - Waiting for events on selector 'bbc70d10-c0c9-4167-bf88-c57dc1af243d'
+30 Jun 2011 13:51:30,773  INFO [main] AnalysisJobManager:118 - wt.f3.filter.mapping.plugin.run completed.
+30 Jun 2011 13:51:30,773  INFO [main] AnalysisJobManager:46 - Waiting for events on selector 'bbc70d10-c0c9-4167-bf88-c57dc1af243d'
+30 Jun 2011 13:52:08,958  INFO [main] AnalysisJobManager:118 - wt.f3.genomic.mapping.plugin.run completed.
+30 Jun 2011 13:52:08,959  INFO [main] AnalysisJobManager:63 - AnalysisJobManager.manageJobs() job.name=wt.f3.ma.file.merger.into.ma.file.plugin.run; pluginId=wt.f3.ma.file.merger.into.ma.file.plugin.run
+30 Jun 2011 13:52:08,960  INFO [main] ClusterPluginJobLauncher:187 - Spawned process for 'wt.f3.ma.file.merger.into.ma.file.plugin.run'.
+java_app.sh --memory 64 com.apldbio.aga.analysis.exec.PluginRunner -q bbc70d10-c0c9-4167-bf88-c57dc1af243d -s -L /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log -l wt.f3.ma.file.merger.into.ma.file.plugin/wt.f3.ma.file.merger.into.ma.file.plugin.run-3.20110630175208959.log -j 3 wt.f3.ma.file.merger.into.ma.file.plugin.run /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/wt.pe.f3.mapping.ini
+30 Jun 2011 13:52:08,960  INFO [main] AnalysisJobManager:46 - Waiting for events on selector 'bbc70d10-c0c9-4167-bf88-c57dc1af243d'
+30 Jun 2011 13:53:15,410  INFO [main] AnalysisJobManager:118 - wt.f3.ma.file.merger.into.ma.file.plugin.run completed.
+30 Jun 2011 13:53:15,411  INFO [main] AnalysisJobManager:63 - AnalysisJobManager.manageJobs() job.name=wt.f5.genomic.mapping.plugin.run; pluginId=wt.f5.genomic.mapping.plugin.run
+30 Jun 2011 13:53:15,411  INFO [main] AnalysisJobManager:63 - AnalysisJobManager.manageJobs() job.name=wt.f5.filter.mapping.plugin.run; pluginId=wt.f5.filter.mapping.plugin.run
+30 Jun 2011 13:53:15,412  INFO [main] ClusterPluginJobLauncher:187 - Spawned process for 'wt.f5.genomic.mapping.plugin.run'.
+java_app.sh --memory 64 com.apldbio.aga.analysis.exec.PluginRunner -q bbc70d10-c0c9-4167-bf88-c57dc1af243d -s -L /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log -l wt.f5.genomic.mapping.plugin/wt.f5.genomic.mapping.plugin.run-4.20110630175315411.log -j 4 wt.f5.genomic.mapping.plugin.run /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/wt.pe.f5.mapping.ini
+30 Jun 2011 13:53:15,418  INFO [main] ClusterPluginJobLauncher:187 - Spawned process for 'wt.f5.filter.mapping.plugin.run'.
+java_app.sh --memory 64 com.apldbio.aga.analysis.exec.PluginRunner -q bbc70d10-c0c9-4167-bf88-c57dc1af243d -s -L /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log -l wt.f5.filter.mapping.plugin/wt.f5.filter.mapping.plugin.run-5.20110630175315415.log -j 5 wt.f5.filter.mapping.plugin.run /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/wt.pe.f5.mapping.ini
+30 Jun 2011 13:53:15,425  INFO [main] AnalysisJobManager:46 - Waiting for events on selector 'bbc70d10-c0c9-4167-bf88-c57dc1af243d'
+30 Jun 2011 13:54:43,399  INFO [main] AnalysisJobManager:118 - wt.f5.filter.mapping.plugin.run completed.
+30 Jun 2011 13:54:43,399  INFO [main] AnalysisJobManager:46 - Waiting for events on selector 'bbc70d10-c0c9-4167-bf88-c57dc1af243d'
+30 Jun 2011 13:55:23,863  INFO [main] AnalysisJobManager:118 - wt.f5.genomic.mapping.plugin.run completed.
+30 Jun 2011 13:55:23,864  INFO [main] AnalysisJobManager:63 - AnalysisJobManager.manageJobs() job.name=wt.f5.ma.file.merger.into.ma.file.plugin.run; pluginId=wt.f5.ma.file.merger.into.ma.file.plugin.run
+30 Jun 2011 13:55:23,865  INFO [main] ClusterPluginJobLauncher:187 - Spawned process for 'wt.f5.ma.file.merger.into.ma.file.plugin.run'.
+java_app.sh --memory 64 com.apldbio.aga.analysis.exec.PluginRunner -q bbc70d10-c0c9-4167-bf88-c57dc1af243d -s -L /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log -l wt.f5.ma.file.merger.into.ma.file.plugin/wt.f5.ma.file.merger.into.ma.file.plugin.run-6.20110630175523864.log -j 6 wt.f5.ma.file.merger.into.ma.file.plugin.run /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/wt.pe.f5.mapping.ini
+30 Jun 2011 13:55:23,865  INFO [main] AnalysisJobManager:46 - Waiting for events on selector 'bbc70d10-c0c9-4167-bf88-c57dc1af243d'
+30 Jun 2011 13:56:27,387  INFO [main] AnalysisJobManager:118 - wt.f5.ma.file.merger.into.ma.file.plugin.run completed.
+30 Jun 2011 13:56:27,388  INFO [main] AnalysisJobManager:63 - AnalysisJobManager.manageJobs() job.name=wt.f3.exon.table.rescue.plugin.run; pluginId=wt.f3.exon.table.rescue.plugin.run
+30 Jun 2011 13:56:27,399  INFO [main] ClusterPluginJobLauncher:103 - fillinJob() ClusterJob ppn=1
+30 Jun 2011 13:56:27,595  INFO [main] ClusterPluginJobLauncher:195 - SUBMIT SCRIPT>>>>#!/bin/bash
+##Use user environment Variable
+#PBS -V
+## Job name
+## Purdue mod ... was #PBS -N BioScope_wt.f3.exon.table.rescue.plugin.run_7
+#PBS -N Bgin.run_7
+## Declare job re-runnable
+#PBS -r y
+## Output files
+#PBS -o '/usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log/TORQUE/wt.f3.exon.table.rescue.plugin/wt.f3.exon.table.rescue.plugin.run-7.20110630175627391.log'
+#PBS -j oe
+
+## Queue name
+#PBS -q mgribsko
+## User nameA
+## Purdue deletion was ...  #PBS -u westerm
+
+## Resources
+#PBS -l walltime=96:00:00,nodes=1:ppn=1,mem=4gb
+
+
+
+##all files to be group writable
+#PBS -W umask=002
+
+# Log Job Info for debugging
+date '+TS[START]: %Y-%m-%d %k:%M:%S.%N'
+echo StartTime is `date`
+#echo Working directory is $PBS_O_WORKDIR
+#cd $PBS_O_WORKDIR
+echo Directory is `pwd`
+echo Running on host $PBS_O_HOST / `hostname`
+echo Job $PBS_O_JOBID - $PBS_JOBNAME in Queue $PBS_QUEUE
+## Purdue ... need newline at end of file?
+## Force all files to be group writable
+umask 0002
+
+unset DISPLAY
+
+	export BIOSCOPEROOT=/scratch/genomics/bioscope/bioscope-coates
+# Note, if bioscoperoot is not set above, this will run the
+# system script in /etc/profile.d/bioscope_profile.sh
+# following lines has freeMarker specific syntax
+if [[ -f ${BIOSCOPEROOT}/etc/profile.d/bioscope_profile.sh ]]; then
+    ${BIOSCOPEROOT}/etc/profile.d/bioscope_profile.sh
+fi
+
+echo BIOSCOPEROOT=$BIOSCOPEROOT
+
+set -x
+
+
+##==== PRE =========================================================
+
+cd /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171
+
+##==================================================================
+date '+TS[JOB_START]: %Y-%m-%d %k:%M:%S.%N'
+set +e
+## =============== COMMAND IS RUN HERE! =============================
+java_app.sh --memory 4000 com.apldbio.aga.analysis.exec.PluginRunner -q bbc70d10-c0c9-4167-bf88-c57dc1af243d -L /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log -l wt.f3.exon.table.rescue.plugin/wt.f3.exon.table.rescue.plugin.run-7.20110630175627388.log -j 7 wt.f3.exon.table.rescue.plugin.run /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/wt.pe.f3.rescue.ini
+## Save exit status
+RETVAL=$?
+set -e
+date '+TS[JOB_END]: %Y-%m-%d %k:%M:%S.%N'
+##==== POST ========================================================
+
+##==================================================================
+
+set +x
+
+
+
+echo EndTime is `date`
+date '+TS[END]: %Y-%m-%d %k:%M:%S.%N'
+
+# return the executed command's exit status
+exit $RETVAL
+
+30 Jun 2011 13:56:27,674  INFO [main] ClusterPluginJobLauncher:199 - Submitted job wt.f3.exon.table.rescue.plugin.run with Id '7' for 'wt.f3.exon.table.rescue.plugin.run'
+30 Jun 2011 13:56:27,674  INFO [main] AnalysisJobManager:46 - Waiting for events on selector 'bbc70d10-c0c9-4167-bf88-c57dc1af243d'
+30 Jun 2011 13:59:27,909  INFO [main] AnalysisJobManager:118 - wt.f3.exon.table.rescue.plugin.run completed.
+30 Jun 2011 13:59:27,910  INFO [main] AnalysisJobManager:63 - AnalysisJobManager.manageJobs() job.name=wt.f3.rescue.ma.file.merger.into.ma.file.plugin.run; pluginId=wt.f3.rescue.ma.file.merger.into.ma.file.plugin.run
+30 Jun 2011 13:59:27,910  INFO [main] ClusterPluginJobLauncher:187 - Spawned process for 'wt.f3.rescue.ma.file.merger.into.ma.file.plugin.run'.
+java_app.sh --memory 64 com.apldbio.aga.analysis.exec.PluginRunner -q bbc70d10-c0c9-4167-bf88-c57dc1af243d -s -L /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log -l wt.f3.rescue.ma.file.merger.into.ma.file.plugin/wt.f3.rescue.ma.file.merger.into.ma.file.plugin.run-8.20110630175927910.log -j 8 wt.f3.rescue.ma.file.merger.into.ma.file.plugin.run /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/wt.pe.f3.rescue.ini
+30 Jun 2011 13:59:27,911  INFO [main] AnalysisJobManager:46 - Waiting for events on selector 'bbc70d10-c0c9-4167-bf88-c57dc1af243d'
+30 Jun 2011 14:05:08,452  INFO [main] AnalysisJobManager:118 - wt.f3.rescue.ma.file.merger.into.ma.file.plugin.run completed.
+30 Jun 2011 14:05:08,453  INFO [main] AnalysisJobManager:63 - AnalysisJobManager.manageJobs() job.name=wt.f5.exon.table.rescue.plugin.run; pluginId=wt.f5.exon.table.rescue.plugin.run
+30 Jun 2011 14:05:08,454  INFO [main] ClusterPluginJobLauncher:103 - fillinJob() ClusterJob ppn=1
+30 Jun 2011 14:05:08,456  INFO [main] ClusterPluginJobLauncher:195 - SUBMIT SCRIPT>>>>#!/bin/bash
+##Use user environment Variable
+#PBS -V
+## Job name
+## Purdue mod ... was #PBS -N BioScope_wt.f5.exon.table.rescue.plugin.run_9
+#PBS -N Bgin.run_9
+## Declare job re-runnable
+#PBS -r y
+## Output files
+#PBS -o '/usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log/TORQUE/wt.f5.exon.table.rescue.plugin/wt.f5.exon.table.rescue.plugin.run-9.20110630180508454.log'
+#PBS -j oe
+
+## Queue name
+#PBS -q mgribsko
+## User nameA
+## Purdue deletion was ...  #PBS -u westerm
+
+## Resources
+#PBS -l walltime=96:00:00,nodes=1:ppn=1,mem=4gb
+
+
+
+##all files to be group writable
+#PBS -W umask=002
+
+# Log Job Info for debugging
+date '+TS[START]: %Y-%m-%d %k:%M:%S.%N'
+echo StartTime is `date`
+#echo Working directory is $PBS_O_WORKDIR
+#cd $PBS_O_WORKDIR
+echo Directory is `pwd`
+echo Running on host $PBS_O_HOST / `hostname`
+echo Job $PBS_O_JOBID - $PBS_JOBNAME in Queue $PBS_QUEUE
+## Purdue ... need newline at end of file?
+## Force all files to be group writable
+umask 0002
+
+unset DISPLAY
+
+	export BIOSCOPEROOT=/scratch/genomics/bioscope/bioscope-coates
+# Note, if bioscoperoot is not set above, this will run the
+# system script in /etc/profile.d/bioscope_profile.sh
+# following lines has freeMarker specific syntax
+if [[ -f ${BIOSCOPEROOT}/etc/profile.d/bioscope_profile.sh ]]; then
+    ${BIOSCOPEROOT}/etc/profile.d/bioscope_profile.sh
+fi
+
+echo BIOSCOPEROOT=$BIOSCOPEROOT
+
+set -x
+
+
+##==== PRE =========================================================
+
+cd /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171
+
+##==================================================================
+date '+TS[JOB_START]: %Y-%m-%d %k:%M:%S.%N'
+set +e
+## =============== COMMAND IS RUN HERE! =============================
+java_app.sh --memory 4000 com.apldbio.aga.analysis.exec.PluginRunner -q bbc70d10-c0c9-4167-bf88-c57dc1af243d -L /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log -l wt.f5.exon.table.rescue.plugin/wt.f5.exon.table.rescue.plugin.run-9.20110630180508453.log -j 9 wt.f5.exon.table.rescue.plugin.run /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/wt.pe.f5.rescue.ini
+## Save exit status
+RETVAL=$?
+set -e
+date '+TS[JOB_END]: %Y-%m-%d %k:%M:%S.%N'
+##==== POST ========================================================
+
+##==================================================================
+
+set +x
+
+
+
+echo EndTime is `date`
+date '+TS[END]: %Y-%m-%d %k:%M:%S.%N'
+
+# return the executed command's exit status
+exit $RETVAL
+
+30 Jun 2011 14:05:08,524  INFO [main] ClusterPluginJobLauncher:199 - Submitted job wt.f5.exon.table.rescue.plugin.run with Id '9' for 'wt.f5.exon.table.rescue.plugin.run'
+30 Jun 2011 14:05:08,525  INFO [main] AnalysisJobManager:46 - Waiting for events on selector 'bbc70d10-c0c9-4167-bf88-c57dc1af243d'
+30 Jun 2011 14:08:15,725  INFO [main] AnalysisJobManager:118 - wt.f5.exon.table.rescue.plugin.run completed.
+30 Jun 2011 14:08:15,726  INFO [main] AnalysisJobManager:63 - AnalysisJobManager.manageJobs() job.name=wt.f5.rescue.ma.file.merger.into.ma.file.plugin.run; pluginId=wt.f5.rescue.ma.file.merger.into.ma.file.plugin.run
+30 Jun 2011 14:08:15,726  INFO [main] ClusterPluginJobLauncher:187 - Spawned process for 'wt.f5.rescue.ma.file.merger.into.ma.file.plugin.run'.
+java_app.sh --memory 64 com.apldbio.aga.analysis.exec.PluginRunner -q bbc70d10-c0c9-4167-bf88-c57dc1af243d -s -L /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log -l wt.f5.rescue.ma.file.merger.into.ma.file.plugin/wt.f5.rescue.ma.file.merger.into.ma.file.plugin.run-10.20110630180815726.log -j 10 wt.f5.rescue.ma.file.merger.into.ma.file.plugin.run /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/wt.pe.f5.rescue.ini
+30 Jun 2011 14:08:15,727  INFO [main] AnalysisJobManager:46 - Waiting for events on selector 'bbc70d10-c0c9-4167-bf88-c57dc1af243d'
+30 Jun 2011 14:09:45,031  INFO [main] AnalysisJobManager:118 - wt.f5.rescue.ma.file.merger.into.ma.file.plugin.run completed.
+30 Jun 2011 14:09:45,032  INFO [main] AnalysisJobManager:63 - AnalysisJobManager.manageJobs() job.name=pairing.wt.run; pluginId=pairing.wt.run
+30 Jun 2011 14:09:45,033  INFO [main] ClusterPluginJobLauncher:187 - Spawned process for 'pairing.wt.run'.
+java_app.sh --memory 64 com.apldbio.aga.analysis.exec.PluginRunner -q bbc70d10-c0c9-4167-bf88-c57dc1af243d -s -L /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log -l pairing.wt/pairing.wt.run-11.20110630180945032.log -j 11 pairing.wt.run /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/wt.pe.pairing.ini
+30 Jun 2011 14:09:45,033  INFO [main] AnalysisJobManager:46 - Waiting for events on selector 'bbc70d10-c0c9-4167-bf88-c57dc1af243d'
+30 Jun 2011 14:09:46,499  INFO [main] AnalysisJobManager:160 - 11: WARNING:  Value for key 'insert.start' may not be less than 35, using 35.
+30 Jun 2011 14:09:53,052  INFO [main] AnalysisJobManager:160 - 11.1: WARNING:  Value for key 'insert.start' may not be less than 35, using 35.
+30 Jun 2011 14:09:53,071  INFO [main] AnalysisJobManager:160 - 11.1: Creating (or finding) mapping indexes.
+30 Jun 2011 14:10:08,504  INFO [main] AnalysisJobManager:160 - 11.1: Counting panels.
+30 Jun 2011 14:10:08,534  INFO [main] AnalysisJobManager:160 - 11.1: Grouping panels for 24 jobs.
+30 Jun 2011 14:10:08,897  INFO [main] AnalysisJobManager:160 - 11: Panel grouping finished.
+30 Jun 2011 14:10:14,557  INFO [main] AnalysisJobManager:160 - 11.2: WARNING:  Value for key 'insert.start' may not be less than 35, using 35.
+30 Jun 2011 14:10:14,592  INFO [main] AnalysisJobManager:160 - 11.2: Starting distribute quality values
+30 Jun 2011 14:10:15,461  INFO [main] AnalysisJobManager:160 - 11.3: Starting main pairing run for panels 0-18
+30 Jun 2011 14:10:16,556  INFO [main] AnalysisJobManager:160 - 11.4: Starting main pairing run for panels 19-36
+30 Jun 2011 14:10:17,370  INFO [main] AnalysisJobManager:160 - 11.5: Starting main pairing run for panels 37-54
+30 Jun 2011 14:10:20,166  INFO [main] AnalysisJobManager:160 - 11.6: Starting main pairing run for panels 55-72
+30 Jun 2011 14:10:20,555  INFO [main] AnalysisJobManager:160 - 11.3: Finished main pairing run for panels 0-18
+30 Jun 2011 14:10:21,183  INFO [main] AnalysisJobManager:160 - 11.7: Starting main pairing run for panels 73-90
+30 Jun 2011 14:10:22,143  INFO [main] AnalysisJobManager:160 - 11.8: Starting main pairing run for panels 91-108
+30 Jun 2011 14:10:22,325  INFO [main] AnalysisJobManager:160 - 11.5: Finished main pairing run for panels 37-54
+30 Jun 2011 14:10:22,975  INFO [main] AnalysisJobManager:160 - 11.4: Finished main pairing run for panels 19-36
+30 Jun 2011 14:10:23,304  INFO [main] AnalysisJobManager:160 - 11.9: Starting main pairing run for panels 109-126
+30 Jun 2011 14:10:24,807  INFO [main] AnalysisJobManager:160 - 11.10: Starting main pairing run for panels 127-144
+30 Jun 2011 14:10:25,898  INFO [main] AnalysisJobManager:160 - 11.11: Starting main pairing run for panels 145-163
+30 Jun 2011 14:10:26,562  INFO [main] AnalysisJobManager:160 - 11.6: Finished main pairing run for panels 55-72
+30 Jun 2011 14:10:26,871  INFO [main] AnalysisJobManager:160 - 11.12: Starting main pairing run for panels 164-181
+30 Jun 2011 14:10:27,790  INFO [main] AnalysisJobManager:160 - 11.7: Finished main pairing run for panels 73-90
+30 Jun 2011 14:10:27,816  INFO [main] AnalysisJobManager:160 - 11.8: Finished main pairing run for panels 91-108
+30 Jun 2011 14:10:28,158  INFO [main] AnalysisJobManager:160 - 11.13: Starting main pairing run for panels 182-199
+30 Jun 2011 14:10:29,787  INFO [main] AnalysisJobManager:160 - 11.14: Starting main pairing run for panels 200-217
+30 Jun 2011 14:10:29,826  INFO [main] AnalysisJobManager:160 - 11.9: Finished main pairing run for panels 109-126
+30 Jun 2011 14:10:31,141  INFO [main] AnalysisJobManager:160 - 11.11: Finished main pairing run for panels 145-163
+30 Jun 2011 14:10:32,042  INFO [main] AnalysisJobManager:160 - 11.15: Starting main pairing run for panels 218-235
+30 Jun 2011 14:10:32,357  INFO [main] AnalysisJobManager:160 - 11.10: Finished main pairing run for panels 127-144
+30 Jun 2011 14:10:32,864  INFO [main] AnalysisJobManager:160 - 11.16: Starting main pairing run for panels 236-253
+30 Jun 2011 14:10:33,512  INFO [main] AnalysisJobManager:160 - 11.12: Finished main pairing run for panels 164-181
+30 Jun 2011 14:10:33,733  INFO [main] AnalysisJobManager:160 - 11.17: Starting main pairing run for panels 254-271
+30 Jun 2011 14:10:34,079  INFO [main] AnalysisJobManager:160 - 11.18: Starting main pairing run for panels 272-289
+30 Jun 2011 14:10:35,639  INFO [main] AnalysisJobManager:160 - 11.14: Finished main pairing run for panels 200-217
+30 Jun 2011 14:10:35,767  INFO [main] AnalysisJobManager:160 - 11.13: Finished main pairing run for panels 182-199
+30 Jun 2011 14:10:36,042  INFO [main] AnalysisJobManager:160 - 11.19: Starting main pairing run for panels 290-307
+30 Jun 2011 14:10:36,533  INFO [main] AnalysisJobManager:160 - 11.20: Starting main pairing run for panels 308-324
+30 Jun 2011 14:10:37,748  INFO [main] AnalysisJobManager:160 - 11.21: Starting main pairing run for panels 325-341
+30 Jun 2011 14:10:38,525  INFO [main] AnalysisJobManager:160 - 11.22: Starting main pairing run for panels 342-358
+30 Jun 2011 14:10:39,304  INFO [main] AnalysisJobManager:160 - 11.23: Starting main pairing run for panels 359-375
+30 Jun 2011 14:10:40,841  INFO [main] AnalysisJobManager:160 - 11.15: Finished main pairing run for panels 218-235
+30 Jun 2011 14:10:40,894  INFO [main] AnalysisJobManager:160 - 11.24: Starting main pairing run for panels 376-392
+30 Jun 2011 14:10:41,229  INFO [main] AnalysisJobManager:160 - 11.17: Finished main pairing run for panels 254-271
+30 Jun 2011 14:10:41,409  INFO [main] AnalysisJobManager:160 - 11.16: Finished main pairing run for panels 236-253
+30 Jun 2011 14:10:42,418  INFO [main] AnalysisJobManager:160 - 11.18: Finished main pairing run for panels 272-289
+30 Jun 2011 14:10:42,501  INFO [main] AnalysisJobManager:160 - 11.25: Starting main pairing run for panels 393-409
+30 Jun 2011 14:10:43,331  INFO [main] AnalysisJobManager:160 - 11.20: Finished main pairing run for panels 308-324
+30 Jun 2011 14:10:45,833  INFO [main] AnalysisJobManager:160 - 11.19: Finished main pairing run for panels 290-307
+30 Jun 2011 14:10:46,169  INFO [main] AnalysisJobManager:160 - 11.21: Finished main pairing run for panels 325-341
+30 Jun 2011 14:10:46,297  INFO [main] AnalysisJobManager:160 - 11.26: Starting main pairing run for panels 410-99999999
+30 Jun 2011 14:10:46,347  INFO [main] AnalysisJobManager:160 - 11.23: Finished main pairing run for panels 359-375
+30 Jun 2011 14:10:47,233  INFO [main] AnalysisJobManager:160 - 11.22: Finished main pairing run for panels 342-358
+30 Jun 2011 14:10:47,658  INFO [main] AnalysisJobManager:160 - 11.24: Finished main pairing run for panels 376-392
+30 Jun 2011 14:10:49,712  INFO [main] AnalysisJobManager:160 - 11.25: Finished main pairing run for panels 393-409
+30 Jun 2011 14:10:50,294  INFO [main] AnalysisJobManager:160 - 11.26: Finished main pairing run for panels 410-99999999
+30 Jun 2011 14:10:50,299  INFO [main] AnalysisJobManager:160 - 11: Main pairing run finished.
+30 Jun 2011 14:14:22,736  INFO [main] AnalysisJobManager:160 - 11.2: Finished distributing quality values
+30 Jun 2011 14:14:27,823  INFO [main] AnalysisJobManager:160 - 11.27: Started creating bam files for panels 0-18
+30 Jun 2011 14:14:27,849  INFO [main] AnalysisJobManager:160 - 11.27: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.01
+30 Jun 2011 14:14:28,980  INFO [main] AnalysisJobManager:160 - 11.28: Started creating bam files for panels 19-36
+30 Jun 2011 14:14:28,998  INFO [main] AnalysisJobManager:160 - 11.28: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.02
+30 Jun 2011 14:14:29,934  INFO [main] AnalysisJobManager:160 - 11.29: Started creating bam files for panels 37-54
+30 Jun 2011 14:14:29,952  INFO [main] AnalysisJobManager:160 - 11.29: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.03
+30 Jun 2011 14:14:30,806  INFO [main] AnalysisJobManager:160 - 11.30: Started creating bam files for panels 55-72
+30 Jun 2011 14:14:30,824  INFO [main] AnalysisJobManager:160 - 11.30: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.04
+30 Jun 2011 14:14:36,947  INFO [main] AnalysisJobManager:160 - 11.31: Started creating bam files for panels 73-90
+30 Jun 2011 14:14:36,964  INFO [main] AnalysisJobManager:160 - 11.31: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.05
+30 Jun 2011 14:14:38,165  INFO [main] AnalysisJobManager:160 - 11.32: Started creating bam files for panels 91-108
+30 Jun 2011 14:14:38,184  INFO [main] AnalysisJobManager:160 - 11.32: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.06
+30 Jun 2011 14:14:40,833  INFO [main] AnalysisJobManager:160 - 11.33: Started creating bam files for panels 109-126
+30 Jun 2011 14:14:40,876  INFO [main] AnalysisJobManager:160 - 11.33: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.07
+30 Jun 2011 14:14:41,668  INFO [main] AnalysisJobManager:160 - 11.34: Started creating bam files for panels 127-144
+30 Jun 2011 14:14:41,687  INFO [main] AnalysisJobManager:160 - 11.34: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.08
+30 Jun 2011 14:14:42,587  INFO [main] AnalysisJobManager:160 - 11.35: Started creating bam files for panels 145-163
+30 Jun 2011 14:14:42,607  INFO [main] AnalysisJobManager:160 - 11.35: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.09
+30 Jun 2011 14:14:43,407  INFO [main] AnalysisJobManager:160 - 11.36: Started creating bam files for panels 164-181
+30 Jun 2011 14:14:43,426  INFO [main] AnalysisJobManager:160 - 11.36: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.10
+30 Jun 2011 14:14:44,410  INFO [main] AnalysisJobManager:160 - 11.37: Started creating bam files for panels 182-199
+30 Jun 2011 14:14:44,448  INFO [main] AnalysisJobManager:160 - 11.37: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.11
+30 Jun 2011 14:14:45,608  INFO [main] AnalysisJobManager:160 - 11.38: Started creating bam files for panels 200-217
+30 Jun 2011 14:14:45,643  INFO [main] AnalysisJobManager:160 - 11.38: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.12
+30 Jun 2011 14:14:46,573  INFO [main] AnalysisJobManager:160 - 11.39: Started creating bam files for panels 218-235
+30 Jun 2011 14:14:46,592  INFO [main] AnalysisJobManager:160 - 11.39: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.13
+30 Jun 2011 14:14:48,634  INFO [main] AnalysisJobManager:160 - 11.40: Started creating bam files for panels 236-253
+30 Jun 2011 14:14:48,683  INFO [main] AnalysisJobManager:160 - 11.40: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.14
+30 Jun 2011 14:14:50,657  INFO [main] AnalysisJobManager:160 - 11.41: Started creating bam files for panels 254-271
+30 Jun 2011 14:14:50,675  INFO [main] AnalysisJobManager:160 - 11.41: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.15
+30 Jun 2011 14:14:51,018  INFO [main] AnalysisJobManager:160 - 11.42: Started creating bam files for panels 272-289
+30 Jun 2011 14:14:51,036  INFO [main] AnalysisJobManager:160 - 11.42: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.16
+30 Jun 2011 14:14:52,529  INFO [main] AnalysisJobManager:160 - 11.43: Started creating bam files for panels 290-307
+30 Jun 2011 14:14:52,549  INFO [main] AnalysisJobManager:160 - 11.43: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.17
+30 Jun 2011 14:14:52,808  INFO [main] AnalysisJobManager:160 - 11.44: Started creating bam files for panels 308-324
+30 Jun 2011 14:14:52,826  INFO [main] AnalysisJobManager:160 - 11.44: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.18
+30 Jun 2011 14:14:53,341  INFO [main] AnalysisJobManager:160 - 11.27: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.01
+30 Jun 2011 14:14:53,702  INFO [main] AnalysisJobManager:160 - 11.45: Started creating bam files for panels 325-341
+30 Jun 2011 14:14:53,721  INFO [main] AnalysisJobManager:160 - 11.45: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.19
+30 Jun 2011 14:14:54,900  INFO [main] AnalysisJobManager:160 - 11.46: Started creating bam files for panels 342-358
+30 Jun 2011 14:14:54,920  INFO [main] AnalysisJobManager:160 - 11.46: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.20
+30 Jun 2011 14:14:55,765  INFO [main] AnalysisJobManager:160 - 11.47: Started creating bam files for panels 359-375
+30 Jun 2011 14:14:55,785  INFO [main] AnalysisJobManager:160 - 11.47: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.21
+30 Jun 2011 14:14:56,615  INFO [main] AnalysisJobManager:160 - 11.48: Started creating bam files for panels 376-392
+30 Jun 2011 14:14:56,635  INFO [main] AnalysisJobManager:160 - 11.48: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.22
+30 Jun 2011 14:14:56,962  INFO [main] AnalysisJobManager:160 - 11.29: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.03
+30 Jun 2011 14:14:57,534  INFO [main] AnalysisJobManager:160 - 11.49: Started creating bam files for panels 393-409
+30 Jun 2011 14:14:57,574  INFO [main] AnalysisJobManager:160 - 11.49: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.23
+30 Jun 2011 14:14:58,137  INFO [main] AnalysisJobManager:160 - 11.50: Started creating bam files for panels 410-99999999
+30 Jun 2011 14:14:58,158  INFO [main] AnalysisJobManager:160 - 11.50: Starting making BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.24
+30 Jun 2011 14:15:03,562  INFO [main] AnalysisJobManager:160 - 11.30: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.04
+30 Jun 2011 14:15:03,567  INFO [main] AnalysisJobManager:160 - 11.28: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.02
+30 Jun 2011 14:15:06,169  INFO [main] AnalysisJobManager:160 - 11.32: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.06
+30 Jun 2011 14:15:09,073  INFO [main] AnalysisJobManager:160 - 11.27: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.01
+30 Jun 2011 14:15:12,459  INFO [main] AnalysisJobManager:160 - 11.31: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.05
+30 Jun 2011 14:15:12,887  INFO [main] AnalysisJobManager:160 - 11.29: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.03
+30 Jun 2011 14:15:12,907  INFO [main] AnalysisJobManager:160 - 11.35: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.09
+30 Jun 2011 14:15:14,415  INFO [main] AnalysisJobManager:160 - 11.33: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.07
+30 Jun 2011 14:15:15,663  INFO [main] AnalysisJobManager:160 - 11.38: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.12
+30 Jun 2011 14:15:17,654  INFO [main] AnalysisJobManager:160 - 11.34: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.08
+30 Jun 2011 14:15:19,129  INFO [main] AnalysisJobManager:160 - 11.44: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.18
+30 Jun 2011 14:15:19,145  INFO [main] AnalysisJobManager:160 - 11.36: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.10
+30 Jun 2011 14:15:19,466  INFO [main] AnalysisJobManager:160 - 11.41: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.15
+30 Jun 2011 14:15:20,177  INFO [main] AnalysisJobManager:160 - 11.50: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.24
+30 Jun 2011 14:15:20,562  INFO [main] AnalysisJobManager:160 - 11.37: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.11
+30 Jun 2011 14:15:22,550  INFO [main] AnalysisJobManager:160 - 11.39: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.13
+30 Jun 2011 14:15:25,362  INFO [main] AnalysisJobManager:160 - 11.47: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.21
+30 Jun 2011 14:15:25,495  INFO [main] AnalysisJobManager:160 - 11.45: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.19
+30 Jun 2011 14:15:26,122  INFO [main] AnalysisJobManager:160 - 11.40: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.14
+30 Jun 2011 14:15:26,412  INFO [main] AnalysisJobManager:160 - 11.42: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.16
+30 Jun 2011 14:15:27,792  INFO [main] AnalysisJobManager:160 - 11.48: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.22
+30 Jun 2011 14:15:29,901  INFO [main] AnalysisJobManager:160 - 11.46: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.20
+30 Jun 2011 14:15:30,223  INFO [main] AnalysisJobManager:160 - 11.28: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.02
+30 Jun 2011 14:15:30,284  INFO [main] AnalysisJobManager:160 - 11.43: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.17
+30 Jun 2011 14:15:30,545  INFO [main] AnalysisJobManager:160 - 11.32: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.06
+30 Jun 2011 14:15:30,678  INFO [main] AnalysisJobManager:160 - 11.30: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.04
+30 Jun 2011 14:15:30,954  INFO [main] AnalysisJobManager:160 - 11.49: Started sort of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.23
+30 Jun 2011 14:15:35,939  INFO [main] AnalysisJobManager:160 - 11.50: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.24
+30 Jun 2011 14:15:37,916  INFO [main] AnalysisJobManager:160 - 11.38: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.12
+30 Jun 2011 14:15:38,483  INFO [main] AnalysisJobManager:160 - 11.44: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.18
+30 Jun 2011 14:15:39,422  INFO [main] AnalysisJobManager:160 - 11.35: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.09
+30 Jun 2011 14:15:39,705  INFO [main] AnalysisJobManager:160 - 11.33: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.07
+30 Jun 2011 14:15:41,076  INFO [main] AnalysisJobManager:160 - 11.41: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.15
+30 Jun 2011 14:15:42,282  INFO [main] AnalysisJobManager:160 - 11.27: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.01
+30 Jun 2011 14:15:42,297  INFO [main] AnalysisJobManager:160 - 11.27: Finished creating bam files for panels 0-18
+30 Jun 2011 14:15:43,254  INFO [main] AnalysisJobManager:160 - 11.29: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.03
+30 Jun 2011 14:15:43,256  INFO [main] AnalysisJobManager:160 - 11.29: Finished creating bam files for panels 37-54
+30 Jun 2011 14:15:46,269  INFO [main] AnalysisJobManager:160 - 11.31: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.05
+30 Jun 2011 14:15:48,774  INFO [main] AnalysisJobManager:160 - 11.47: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.21
+30 Jun 2011 14:15:49,451  INFO [main] AnalysisJobManager:160 - 11.37: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.11
+30 Jun 2011 14:15:49,838  INFO [main] AnalysisJobManager:160 - 11.48: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.22
+30 Jun 2011 14:15:50,243  INFO [main] AnalysisJobManager:160 - 11.45: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.19
+30 Jun 2011 14:15:50,701  INFO [main] AnalysisJobManager:160 - 11.39: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.13
+30 Jun 2011 14:15:51,416  INFO [main] AnalysisJobManager:160 - 11.34: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.08
+30 Jun 2011 14:15:52,152  INFO [main] AnalysisJobManager:160 - 11.36: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.10
+30 Jun 2011 14:15:54,703  INFO [main] AnalysisJobManager:160 - 11.49: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.23
+30 Jun 2011 14:15:55,087  INFO [main] AnalysisJobManager:160 - 11.42: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.16
+30 Jun 2011 14:15:55,712  INFO [main] AnalysisJobManager:160 - 11.40: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.14
+30 Jun 2011 14:15:58,485  INFO [main] AnalysisJobManager:160 - 11.32: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.06
+30 Jun 2011 14:15:58,488  INFO [main] AnalysisJobManager:160 - 11.32: Finished creating bam files for panels 91-108
+30 Jun 2011 14:16:00,716  INFO [main] AnalysisJobManager:160 - 11.28: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.02
+30 Jun 2011 14:16:00,718  INFO [main] AnalysisJobManager:160 - 11.28: Finished creating bam files for panels 19-36
+30 Jun 2011 14:16:01,196  INFO [main] AnalysisJobManager:160 - 11.30: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.04
+30 Jun 2011 14:16:01,200  INFO [main] AnalysisJobManager:160 - 11.30: Finished creating bam files for panels 55-72
+30 Jun 2011 14:16:01,271  INFO [main] AnalysisJobManager:160 - 11.50: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.24
+30 Jun 2011 14:16:01,280  INFO [main] AnalysisJobManager:160 - 11.50: Finished creating bam files for panels 410-99999999
+30 Jun 2011 14:16:01,302  INFO [main] AnalysisJobManager:160 - 11.46: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.20
+30 Jun 2011 14:16:02,477  INFO [main] AnalysisJobManager:160 - 11.43: Started annotation of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.17
+30 Jun 2011 14:16:06,928  INFO [main] AnalysisJobManager:160 - 11.38: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.12
+30 Jun 2011 14:16:06,932  INFO [main] AnalysisJobManager:160 - 11.38: Finished creating bam files for panels 200-217
+30 Jun 2011 14:16:07,204  INFO [main] AnalysisJobManager:160 - 11.35: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.09
+30 Jun 2011 14:16:07,211  INFO [main] AnalysisJobManager:160 - 11.35: Finished creating bam files for panels 145-163
+30 Jun 2011 14:16:08,941  INFO [main] AnalysisJobManager:160 - 11.44: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.18
+30 Jun 2011 14:16:08,947  INFO [main] AnalysisJobManager:160 - 11.44: Finished creating bam files for panels 308-324
+30 Jun 2011 14:16:09,969  INFO [main] AnalysisJobManager:160 - 11.33: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.07
+30 Jun 2011 14:16:09,978  INFO [main] AnalysisJobManager:160 - 11.33: Finished creating bam files for panels 109-126
+30 Jun 2011 14:16:10,016  INFO [main] AnalysisJobManager:160 - 11.41: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.15
+30 Jun 2011 14:16:10,020  INFO [main] AnalysisJobManager:160 - 11.41: Finished creating bam files for panels 254-271
+30 Jun 2011 14:16:15,006  INFO [main] AnalysisJobManager:160 - 11.31: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.05
+30 Jun 2011 14:16:15,008  INFO [main] AnalysisJobManager:160 - 11.31: Finished creating bam files for panels 73-90
+30 Jun 2011 14:16:16,296  INFO [main] AnalysisJobManager:160 - 11.47: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.21
+30 Jun 2011 14:16:16,299  INFO [main] AnalysisJobManager:160 - 11.47: Finished creating bam files for panels 359-375
+30 Jun 2011 14:16:20,152  INFO [main] AnalysisJobManager:160 - 11.37: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.11
+30 Jun 2011 14:16:20,154  INFO [main] AnalysisJobManager:160 - 11.37: Finished creating bam files for panels 182-199
+30 Jun 2011 14:16:20,602  INFO [main] AnalysisJobManager:160 - 11.45: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.19
+30 Jun 2011 14:16:20,716  INFO [main] AnalysisJobManager:160 - 11.45: Finished creating bam files for panels 325-341
+30 Jun 2011 14:16:20,770  INFO [main] AnalysisJobManager:160 - 11.39: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.13
+30 Jun 2011 14:16:20,776  INFO [main] AnalysisJobManager:160 - 11.39: Finished creating bam files for panels 218-235
+30 Jun 2011 14:16:20,798  INFO [main] AnalysisJobManager:160 - 11.48: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.22
+30 Jun 2011 14:16:20,802  INFO [main] AnalysisJobManager:160 - 11.48: Finished creating bam files for panels 376-392
+30 Jun 2011 14:16:22,960  INFO [main] AnalysisJobManager:160 - 11.36: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.10
+30 Jun 2011 14:16:22,973  INFO [main] AnalysisJobManager:160 - 11.36: Finished creating bam files for panels 164-181
+30 Jun 2011 14:16:23,284  INFO [main] AnalysisJobManager:160 - 11.49: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.23
+30 Jun 2011 14:16:23,288  INFO [main] AnalysisJobManager:160 - 11.49: Finished creating bam files for panels 393-409
+30 Jun 2011 14:16:23,759  INFO [main] AnalysisJobManager:160 - 11.34: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.08
+30 Jun 2011 14:16:23,764  INFO [main] AnalysisJobManager:160 - 11.34: Finished creating bam files for panels 127-144
+30 Jun 2011 14:16:25,702  INFO [main] AnalysisJobManager:160 - 11.40: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.14
+30 Jun 2011 14:16:25,706  INFO [main] AnalysisJobManager:160 - 11.40: Finished creating bam files for panels 236-253
+30 Jun 2011 14:16:26,066  INFO [main] AnalysisJobManager:160 - 11.42: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.16
+30 Jun 2011 14:16:26,070  INFO [main] AnalysisJobManager:160 - 11.42: Finished creating bam files for panels 272-289
+30 Jun 2011 14:16:31,673  INFO [main] AnalysisJobManager:160 - 11.46: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.20
+30 Jun 2011 14:16:31,677  INFO [main] AnalysisJobManager:160 - 11.46: Finished creating bam files for panels 342-358
+30 Jun 2011 14:16:33,358  INFO [main] AnalysisJobManager:160 - 11.43: Finished making of BAM file for directory /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/temp/pairing.wt-11/temp.17
+30 Jun 2011 14:16:33,362  INFO [main] AnalysisJobManager:160 - 11.43: Finished creating bam files for panels 290-307
+30 Jun 2011 14:16:33,369  INFO [main] AnalysisJobManager:160 - 11: Pairing distributed BAM file creation finished.
+30 Jun 2011 14:16:40,960  INFO [main] AnalysisJobManager:160 - 11.52: Starting merge of BAM files.
+30 Jun 2011 14:21:50,880  INFO [main] AnalysisJobManager:160 - 11.52: Finished merge of BAM files.
+30 Jun 2011 14:21:50,900  INFO [main] AnalysisJobManager:160 - 11.52: Starting making index.
+30 Jun 2011 14:22:11,578  INFO [main] AnalysisJobManager:160 - 11.52: Finished making index.
+30 Jun 2011 14:22:11,579  INFO [main] AnalysisJobManager:160 - 11.52: Starting merge of unmapped files
+30 Jun 2011 14:24:16,314  INFO [main] AnalysisJobManager:160 - 11: Pairing file gather finished.
+30 Jun 2011 14:24:16,601  INFO [main] AnalysisJobManager:118 - pairing.wt.run completed.
+30 Jun 2011 14:24:16,602  INFO [main] AnalysisJobManager:63 - AnalysisJobManager.manageJobs() job.name=wt.counttag.run; pluginId=wt.counttag.run
+30 Jun 2011 14:24:16,604  INFO [main] ClusterPluginJobLauncher:103 - fillinJob() ClusterJob ppn=1
+30 Jun 2011 14:24:16,606  INFO [main] ClusterPluginJobLauncher:195 - SUBMIT SCRIPT>>>>#!/bin/bash
+##Use user environment Variable
+#PBS -V
+## Job name
+## Purdue mod ... was #PBS -N BioScope_wt.counttag.run_12
+#PBS -N Bag.run_12
+## Declare job re-runnable
+#PBS -r y
+## Output files
+#PBS -o '/usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log/TORQUE/wt.counttag/wt.counttag.run-12.20110630182416603.log'
+#PBS -j oe
+
+## Queue name
+#PBS -q mgribsko
+## User nameA
+## Purdue deletion was ...  #PBS -u westerm
+
+## Resources
+#PBS -l walltime=72:00:00,nodes=1:ppn=1,mem=4gb
+
+
+
+##all files to be group writable
+#PBS -W umask=002
+
+# Log Job Info for debugging
+date '+TS[START]: %Y-%m-%d %k:%M:%S.%N'
+echo StartTime is `date`
+#echo Working directory is $PBS_O_WORKDIR
+#cd $PBS_O_WORKDIR
+echo Directory is `pwd`
+echo Running on host $PBS_O_HOST / `hostname`
+echo Job $PBS_O_JOBID - $PBS_JOBNAME in Queue $PBS_QUEUE
+## Purdue ... need newline at end of file?
+## Force all files to be group writable
+umask 0002
+
+unset DISPLAY
+
+	export BIOSCOPEROOT=/scratch/genomics/bioscope/bioscope-coates
+# Note, if bioscoperoot is not set above, this will run the
+# system script in /etc/profile.d/bioscope_profile.sh
+# following lines has freeMarker specific syntax
+if [[ -f ${BIOSCOPEROOT}/etc/profile.d/bioscope_profile.sh ]]; then
+    ${BIOSCOPEROOT}/etc/profile.d/bioscope_profile.sh
+fi
+
+echo BIOSCOPEROOT=$BIOSCOPEROOT
+
+set -x
+
+
+##==== PRE =========================================================
+
+cd /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171
+
+##==================================================================
+date '+TS[JOB_START]: %Y-%m-%d %k:%M:%S.%N'
+set +e
+## =============== COMMAND IS RUN HERE! =============================
+java_app.sh --memory 4000 com.apldbio.aga.analysis.exec.PluginRunner -q bbc70d10-c0c9-4167-bf88-c57dc1af243d -L /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log -l wt.counttag/wt.counttag.run-12.20110630182416602.log -j 12 wt.counttag.run /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/wt.pe.counttag.ini
+## Save exit status
+RETVAL=$?
+set -e
+date '+TS[JOB_END]: %Y-%m-%d %k:%M:%S.%N'
+##==== POST ========================================================
+
+##==================================================================
+
+set +x
+
+
+
+echo EndTime is `date`
+date '+TS[END]: %Y-%m-%d %k:%M:%S.%N'
+
+# return the executed command's exit status
+exit $RETVAL
+
+30 Jun 2011 14:24:16,686  INFO [main] ClusterPluginJobLauncher:199 - Submitted job wt.counttag.run with Id '12' for 'wt.counttag.run'
+30 Jun 2011 14:24:16,687  INFO [main] AnalysisJobManager:46 - Waiting for events on selector 'bbc70d10-c0c9-4167-bf88-c57dc1af243d'
+01 Jul 2011 18:53:46,896  INFO [main] AnalysisJobManager:118 - wt.counttag.run completed.
+01 Jul 2011 18:53:46,896  INFO [main] AnalysisJobManager:63 - AnalysisJobManager.manageJobs() job.name=wt.sam2wig.run; pluginId=wt.sam2wig.run
+01 Jul 2011 18:53:46,900  INFO [main] ClusterPluginJobLauncher:103 - fillinJob() ClusterJob ppn=1
+01 Jul 2011 18:53:46,917  INFO [main] ClusterPluginJobLauncher:195 - SUBMIT SCRIPT>>>>#!/bin/bash
+##Use user environment Variable
+#PBS -V
+## Job name
+## Purdue mod ... was #PBS -N BioScope_wt.sam2wig.run_13
+#PBS -N Big.run_13
+## Declare job re-runnable
+#PBS -r y
+## Output files
+#PBS -o '/usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log/TORQUE/wt.sam2wig/wt.sam2wig.run-13.20110701225346897.log'
+#PBS -j oe
+
+## Queue name
+#PBS -q mgribsko
+## User nameA
+## Purdue deletion was ...  #PBS -u westerm
+
+## Resources
+#PBS -l walltime=96:00:00,nodes=1:ppn=1,mem=4gb
+
+
+
+##all files to be group writable
+#PBS -W umask=002
+
+# Log Job Info for debugging
+date '+TS[START]: %Y-%m-%d %k:%M:%S.%N'
+echo StartTime is `date`
+#echo Working directory is $PBS_O_WORKDIR
+#cd $PBS_O_WORKDIR
+echo Directory is `pwd`
+echo Running on host $PBS_O_HOST / `hostname`
+echo Job $PBS_O_JOBID - $PBS_JOBNAME in Queue $PBS_QUEUE
+## Purdue ... need newline at end of file?
+## Force all files to be group writable
+umask 0002
+
+unset DISPLAY
+
+	export BIOSCOPEROOT=/scratch/genomics/bioscope/bioscope-coates
+# Note, if bioscoperoot is not set above, this will run the
+# system script in /etc/profile.d/bioscope_profile.sh
+# following lines has freeMarker specific syntax
+if [[ -f ${BIOSCOPEROOT}/etc/profile.d/bioscope_profile.sh ]]; then
+    ${BIOSCOPEROOT}/etc/profile.d/bioscope_profile.sh
+fi
+
+echo BIOSCOPEROOT=$BIOSCOPEROOT
+
+set -x
+
+
+##==== PRE =========================================================
+
+cd /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171
+
+##==================================================================
+date '+TS[JOB_START]: %Y-%m-%d %k:%M:%S.%N'
+set +e
+## =============== COMMAND IS RUN HERE! =============================
+java_app.sh --memory 4000 com.apldbio.aga.analysis.exec.PluginRunner -q bbc70d10-c0c9-4167-bf88-c57dc1af243d -L /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/log -l wt.sam2wig/wt.sam2wig.run-13.20110701225346896.log -j 13 wt.sam2wig.run /usr/rmt_share/genomics/westerm/xr00162_Morning-glory-1/000630_2RG1_171/wt.pe.sam2wig.ini
+## Save exit status
+RETVAL=$?
+set -e
+date '+TS[JOB_END]: %Y-%m-%d %k:%M:%S.%N'
+##==== POST ========================================================
+
+##==================================================================
+
+set +x
+
+
+
+echo EndTime is `date`
+date '+TS[END]: %Y-%m-%d %k:%M:%S.%N'
+
+# return the executed command's exit status
+exit $RETVAL
+
+01 Jul 2011 18:53:47,031  INFO [main] ClusterPluginJobLauncher:199 - Submitted job wt.sam2wig.run with Id '13' for 'wt.sam2wig.run'
+01 Jul 2011 18:53:47,031  INFO [main] AnalysisJobManager:46 - Waiting for events on selector 'bbc70d10-c0c9-4167-bf88-c57dc1af243d'
+01 Jul 2011 19:23:23,785  INFO [main] AnalysisJobManager:118 - wt.sam2wig.run completed.
+01 Jul 2011 19:23:23,786  INFO [main] PluginJobManager:141 - Finished successfully
+01 Jul 2011 19:23:23,787  INFO [main] PluginJobManager:128 - >>>> END of PluginJobManager >>>> date=2011-07-01 19:23:23.787  EDT
+01 Jul 2011 19:23:23,787  INFO [main] PluginJobManager:130 - >>>> END of PluginJobManager >>>> date DURATION=1 days 5 hours 33 minutes 47 secs 
+01 Jul 2011 19:23:23,792  INFO [ShutdownHook] EventTransportFactory:140 - Closing JMS connection and session
+ on call from:
+com.apldbio.aga.analysis.workflow.BioscopeShutdownHook.run(BioscopeShutdownHook.java:55)
+
