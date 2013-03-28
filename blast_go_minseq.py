@@ -4,8 +4,8 @@
 #is sequence name that matches fasta file and second file is top
 #blast hit or go info)
 #
-#python fasta_minseq.py [reference.fasta] [minimum sequence length] [blast_file] [go_file]
-#python fasta_minseq.py transcriptome.fasta 300 topblasts.csv gocats.csv
+#python blast_go_minseq.py [reference.fasta] [minimum sequence length] [blast_file] [go_file]
+#python blast_go_minseq.py transcriptome.fasta 300 topblasts.csv gocats.csv
 
 import sys, csv
 from Bio import SeqIO
