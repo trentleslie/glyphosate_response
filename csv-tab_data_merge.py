@@ -38,13 +38,13 @@ def custom_fasta(lengths, expressions, output_file_name):
 
 	for (scaffold, length) in csv.reader(open(lengths), delimiter='\t'):
 		if scaffold in lengths_dict:
-			print scaffold + " occurs twice in the lengths data."
+			print scaffold + " occurs twice in " + lengths + "."
 		else:
 			lengths_dict.update({scaffold:length})
 
         for (scaffold, expression) in csv.reader(open(expressions), delimiter='\t'):
                 if scaffold in expressions_dict:
-                        print scaffold + " occurs twice in the basemeans data."
+                        print scaffold + " occurs twice in " + expressions + "."
                 else:
                         expressions_dict.update({scaffold:expression})
 
@@ -53,7 +53,7 @@ def custom_fasta(lengths, expressions, output_file_name):
 			output_line = scaffold + '\t' + str(lengths_dict[scaffold]) + '\t' + str(expressions_dict[scaffold]) + '\n'
 			output_file.write(output_line)
 		else:
-			print scaffold + "is not in lengths file!"
+			print scaffold + " is not in " + lengths + " file!"
 
 	output_file.close()
 	input_file.close()
